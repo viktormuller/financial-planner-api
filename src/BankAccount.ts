@@ -3,7 +3,7 @@ export interface BankAccount {
     name: string;
     type: BankAccountType;
     subType: string;
-    taxType: BankAccountTaxType;
+    taxType?: BankAccountTaxType;
     balance: number;
     limit?: number;
     currency: string;
