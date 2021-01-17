@@ -5,11 +5,11 @@ export * from "./BankAccount";
 export * from "./Holding";
 
 export interface FP_API{
-    getLinkToken(userId:string):Promise<string>;
+    getLinkToken(userId?:string):Promise<string>;
 
-    setPublicToken(userId:string, publicToken:string):Promise<string>;
+    setPublicToken(publicToken:string, userId?:string):Promise<string>;
 
-    getBankAccounts(userId:string):Promise<BankAccount[]>;
+    getBankAccounts(userId?:string):Promise<BankAccount[]>;
 
-    getHoldings():Promise<Holding[]>;
+    getHoldings(userId?:string):Promise<Holding[]>;
 }
