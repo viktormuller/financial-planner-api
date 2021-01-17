@@ -9,6 +9,8 @@ export interface FP_API{
 
     setPublicToken(publicToken:string, userId?:string):Promise<string>;
 
+    hasPlaidAccessToken(userId?:string):Promise<boolean>;
+
     getBankAccounts(userId?:string):Promise<BankAccount[]>;
 
     getHoldings(userId?:string):Promise<Holding[]>;
