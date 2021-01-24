@@ -1,6 +1,6 @@
 {
   "name": "financial-planner-api",
-  "version": "0.7.3",
+  "version": "1.0.0",
   "description": "API definition for financial planner app",
   "main": "build/FP_API.js",
   "types": "build/FP_API.d.ts",
