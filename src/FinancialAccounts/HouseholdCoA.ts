@@ -13,6 +13,13 @@ export const NET_CASH_OUT_FLOW_ACCOUNT_TYPE = {
     increaseWith: AccountSide.DEBIT
 }
 
+export const MORTGAGE_PAYMENT_ACCOUNT_TYPE ={
+    name: "Mortgage payment",
+    id: "afaf7031-6ade-4779-a110-a509d7f0df49",
+    increaseWith: AccountSide.DEBIT,
+    parent: NET_CASH_OUT_FLOW_ACCOUNT_TYPE
+}
+
 export const CHILD_COST_ACCOUNT_TYPE:AccountType = {
     name: "Children cost",
     id: "bae0cfff-6de3-4120-911f-b54bebb41ea1",
